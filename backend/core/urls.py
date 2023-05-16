@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from film_service import urls as film_service_urls
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("api/", film_service_urls),
+
 ]
