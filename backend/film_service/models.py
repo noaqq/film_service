@@ -1,4 +1,6 @@
 from django.db import models
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
 
 
 class User(models.Model):
@@ -13,7 +15,6 @@ class User(models.Model):
         verbose_name = "User"
         verbose_name_plural = "Users"
         ordering = ["username"]
-
 class UserFilms(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     film = models.ForeignKey("Film", on_delete=models.CASCADE)
@@ -36,7 +37,10 @@ class Film(models.Model):
     year = models.IntegerField()
     director = models.CharField(max_length=50)
     rating = models.IntegerField()
-
+    actors = models.ManyToManyField("Actor", related_name="Films")
+    genres = models.ManyToManyField("Genre", related_name="Films")
+    categories = models.ManyToManyField("Category", related_name="Films")
+    
     def __str__(self):
         return self.title
     
