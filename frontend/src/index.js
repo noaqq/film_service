@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Navigate, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Route exact path="/">
-      <Navigate to="/RegisterAuth" />
-    </Route>
+    <Routes>
+      <Route exact path="/" element={<App />} />
+    </Routes>
   </React.StrictMode>
 );
 
