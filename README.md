@@ -1,19 +1,10 @@
-# film_service
-
 ## Description
+Online service for watching movies and series.
+## Technologies
+| Backend | Frontend |Deploy/DevOps|
+| --- | --- |--- |
+|Django Rest framework|React|Github Actions|
+|Postgres|Tailwind|Docker|
+||Vite||
 
-## list of technologies used:
 
-- Backend:
-  - Django Rest framework
-  - Future:
-    - Postgres
-    - Docker
-- Frontend:
-  - React
-    - Tailwind
-  - Vite
-- Future:
-  - Deploy/DevOps:
-    - Github Actions
-    - Docker
