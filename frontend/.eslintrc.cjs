@@ -11,9 +11,11 @@ module.exports = {
   plugins: ["react-refresh"],
 
   rules: {
-    "no-unused-vars": [
-      "error",
-      { vars: "all", args: "none", ignoreRestSiblings: false },
-    ],
+    "prettier/prettier": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
   },
 };
