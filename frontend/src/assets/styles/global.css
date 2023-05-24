@@ -1,5 +1,3 @@
-body {
-    background: rgb(13,13,13);
-    background: linear-gradient(0deg, rgba(13,13,13,1) 30%, rgba(31,31,31,1) 100%);
-    background-repeat: no-repeat;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
