@@ -1,12 +1,13 @@
 import React from 'react';
-import '../assets/styles/global.css';
+import '../assets/styles/style.css';
 import styles from './Register.module.css';
 
 function Register() {
   return (
-    <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
+    <div className='flex items-center justify-center h-screen'>
       <div className={styles.item}>
-          
+        <h1>Войдите или зарегистрируйтесь</h1>
+        <span>чтобы пользоваться сервисом</span>
       </div>
     </div>
   );
