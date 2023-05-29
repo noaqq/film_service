@@ -1,3 +1,23 @@
+body {
+  width: auto;
+  height: auto;
+  margin: 0px;
+}
+
 .gradient-bg {
-    background-image: linear-gradient(to bottom, rgb(31, 31, 31), rgb(13, 13, 13));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(31, 31, 31),
+    rgb(13, 13, 13)
+  );
+}
+
+.cont {
+  width: 550px;
+  height: 550px;
+  background-color: linear-gradient(
+    to bottom,
+    rgb(31, 31, 31),
+    rgb(13, 13, 13)
+  );
 }
